@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:BreakHub"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+	<Grid Margin="41,34,169,133">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0*"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="800,435,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+		<TextBox x:Name="TimerDisplay" Grid.ColumnSpan="2" Margin="222,50,222,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="26" RenderTransformOrigin="1.619,0.541" FontSize="20"/>
+		<Button Content="Taking my Break!" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="222,146,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.373,0.568" Click="Button_Click"/>
 
-    </Grid>
+
+	</Grid>
 </Window>

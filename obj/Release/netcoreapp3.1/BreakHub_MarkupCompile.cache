@@ -1,20 +1,20 @@
 ﻿BreakHub
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\yk930\Source\Repos\BreakHub\obj\Debug\netcoreapp3.1\
+C:\Users\yk930\Source\Repos\BreakHub\obj\Release\netcoreapp3.1\
 BreakHub
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\yk930\Source\Repos\BreakHub\App.xaml
 11407045341
 
-5884703772
+3-1233169557
 192-1533232326
 MainWindow.xaml;
 
-False
+True
 
