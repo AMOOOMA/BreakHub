@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yk930\\Source\\Repos\\BreakHub\\BreakHub.csproj": {}
+    "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yk930\\Source\\Repos\\BreakHub\\BreakHub.csproj": {
+    "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yk930\\Source\\Repos\\BreakHub\\BreakHub.csproj",
+        "projectUniqueName": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj",
         "projectName": "BreakHub",
-        "projectPath": "C:\\Users\\yk930\\Source\\Repos\\BreakHub\\BreakHub.csproj",
-        "packagesPath": "C:\\Users\\yk930\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yk930\\Source\\Repos\\BreakHub\\obj\\",
+        "projectPath": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj",
+        "packagesPath": "C:\\Users\\zc470\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yk930\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\zc470\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Tulpep.NotificationWindow": {
+              "target": "Package",
+              "version": "[1.1.38, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

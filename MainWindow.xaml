@@ -5,16 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BreakHub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-	<Grid Margin="41,34,169,133">
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="0*"/>
-			<ColumnDefinition/>
-		</Grid.ColumnDefinitions>
-		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="800,435,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-		<TextBox x:Name="TimerDisplay" Grid.ColumnSpan="2" Margin="222,50,222,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="26" RenderTransformOrigin="1.619,0.541" FontSize="20"/>
-		<Button Content="Taking my Break!" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" Margin="222,146,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.373,0.568" Click="Button_Click"/>
-
-
-	</Grid>
+        Title="MainWindow" Height="476" Width="710" MinWidth="800" MinHeight="593">
+    <Grid HorizontalAlignment="Center" Height="344" Margin="0,0,0,109" VerticalAlignment="Bottom" Width="666">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="318*"/>
+            <ColumnDefinition Width="173*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="151*"/>
+            <RowDefinition Height="96*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="beg_timer" Content="Begin Timer" HorizontalAlignment="Left" Height="42" VerticalAlignment="Bottom" Width="127" Click="beg_timer_click" Grid.Row="1" Grid.Column="1" Margin="10,0,0,10"/>
+        <Label Content="How long do you want to study?" HorizontalAlignment="Center" Height="38" VerticalAlignment="Bottom" Width="306" FontSize="20" Grid.Row="1" Grid.Column="1" Margin="0,0,0,113"/>
+        <TextBox x:Name="Timer_Input" Grid.Column="1" HorizontalAlignment="Center" Height="56" Margin="0,0,0,57" Grid.Row="1" Text="00:00:00" TextWrapping="NoWrap" VerticalAlignment="Bottom" Width="216" FontSize="36" MaxLines="1" MaxLength="8" TextAlignment="Center" AutoWordSelection="True"/>
+        <Button x:Name="stp_timer" Content="Stop Timer" HorizontalAlignment="Left" Height="42" VerticalAlignment="Bottom" Width="127" Click="stp_timer_click" Grid.Row="1" Grid.Column="1" Margin="181,0,0,10"/>
+    </Grid>
 </Window>

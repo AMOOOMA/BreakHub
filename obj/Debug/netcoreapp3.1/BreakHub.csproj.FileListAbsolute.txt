@@ -18,3 +18,31 @@ C:\Users\yk930\Source\Repos\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.Cor
 C:\Users\yk930\Source\Repos\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.dll
 C:\Users\yk930\Source\Repos\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.pdb
 C:\Users\yk930\source\repos\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.genruntimeconfig.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.exe
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.deps.json
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.runtimeconfig.json
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.runtimeconfig.dev.json
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.pdb
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.AssemblyReference.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub_MarkupCompile.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub_MarkupCompile.lref
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.g.resources
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.AssemblyInfoInputs.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.AssemblyInfo.cs
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.CoreCompileInputs.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.pdb
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.genruntimeconfig.cache
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\Tulpep.NotificationWindow.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.Properties.Resources.resources
+D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.GenerateResource.cache
