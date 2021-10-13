@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BreakHub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="476" Width="710" MinWidth="800" MinHeight="593">
+        Title="MainWindow" Height="476" Width="710" MinWidth="800" MinHeight="593" MaxWidth="800" MaxHeight="600">
     <Grid HorizontalAlignment="Center" Height="344" Margin="0,0,0,109" VerticalAlignment="Bottom" Width="666">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="175*"/>
