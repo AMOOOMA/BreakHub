@@ -21,5 +21,6 @@
         <Label Content="How long do you want to study?" HorizontalAlignment="Center" Height="38" VerticalAlignment="Bottom" Width="306" FontSize="20" Grid.Row="1" Grid.Column="1" Margin="0,0,0,113"/>
         <TextBox x:Name="Timer_Input" Grid.Column="1" HorizontalAlignment="Center" Height="56" Margin="0,0,0,57" Grid.Row="1" Text="00:00:00" TextWrapping="NoWrap" VerticalAlignment="Bottom" Width="216" FontSize="36" MaxLines="1" MaxLength="8" TextAlignment="Center" AutoWordSelection="True"/>
         <Button x:Name="stp_timer" Content="Stop Timer" HorizontalAlignment="Left" Height="42" VerticalAlignment="Bottom" Width="127" Click="stp_timer_click" Grid.Row="1" Grid.Column="1" Margin="181,0,0,10"/>
+        <CheckBox x:Name="with_startup" Content="Start with startup" Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Checked="Startup_CheckBox_Checked" FontSize="16" Grid.Row="2"/>
     </Grid>
 </Window>

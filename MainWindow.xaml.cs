@@ -111,6 +111,12 @@ namespace BreakHub
             }
             
         }
+
+        private void Startup_CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void reset_timer(int input_time) {
             Timer.Stop();
             Timer_Input.Text = new_timer;
