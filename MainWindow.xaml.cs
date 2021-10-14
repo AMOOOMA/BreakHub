@@ -26,8 +26,10 @@ namespace BreakHub
         private string input = "";
         private string time_remain = "";
         private const string new_timer = "00:00:00";
-        private int time = 0;
-        private DispatcherTimer Timer;
+        private int stidy_time = 0;
+        private DispatcherTimer Study_Timer = new DispatcherTimer();
+        private DispatcherTimer Break_Timer = new DispatcherTimer();
+        private int break_time = 5; //600
         public MainWindow()
         {
             InitializeComponent();
@@ -36,14 +38,14 @@ namespace BreakHub
         private void beg_timer_click(object sender, RoutedEventArgs e)
         {
             input = Timer_Input.Text;
-            
-            time = string_time(input);
+
+            stidy_time = string_time(input);
             popup(SystemIcons.Warning.ToBitmap(), "Timer in Secs", "\n\n" + string_time(input).ToString());
             //time_remain = input;
-            Timer = new DispatcherTimer();
-            Timer.Interval = new TimeSpan(0, 0, 1);
-            Timer.Tick += timer_tick;
-            Timer.Start();
+            Study_Timer = new DispatcherTimer();
+            Study_Timer.Interval = new TimeSpan(0, 0, 1);
+            Study_Timer.Tick += Timer_tick_for_study_timer;
+            Study_Timer.Start();
         }
         private void stp_timer_click(object sender, RoutedEventArgs e)
         {
@@ -87,20 +89,48 @@ namespace BreakHub
             string[] times = str.Split(':');
             return 60*(60*int.Parse(times[0]) + int.Parse(times[1])) + int.Parse(times[2]);
         }
-
-        private void timer_tick(object sender, EventArgs e)
+        private void Break_Timer_start() {
+            Break_Timer.Interval = new TimeSpan(0, 0, 1);
+            Break_Timer.Tick += Timer_tick_for_Break_timer;
+            Break_Timer.Start();
+        }
+        private void Timer_tick_for_study_timer(object sender, EventArgs e)
         {
-            if(time == 0)
+            if(stidy_time == 0)
             {
-                popup(SystemIcons.Exclamation.ToBitmap(), "Timer Finished", "\n\nThe timer is stopped because countdown is finished!");
+                popup(SystemIcons.Exclamation.ToBitmap(), "Stop studying", "\n\nYou need take a break!");
+                Study_Timer.Stop();
+                Break_Timer_start();
                 return;
             }
             else
             {
-                time--;
-                Timer_Input.Text = time_string(time);
+                stidy_time--;
+                Timer_Input.Text = time_string(stidy_time);
             }
             
+        }
+        private void Timer_tick_for_Break_timer(object sender, EventArgs e) {
+            if (break_time == 0)
+            {
+                popup(SystemIcons.Exclamation.ToBitmap(), "Break finished", "\n\nYou can back to study");
+                Break_Timer.Stop();
+                reset();
+                return;
+            }
+            else
+            {
+                break_time--;
+                Timer_Input.Text = time_string(stidy_time);
+            }
+        }
+        private void reset() {
+            Study_Timer = new DispatcherTimer();
+            Break_Timer = new DispatcherTimer();
+            input = "";
+            time_remain = "";
+            stidy_time = 0;
+            break_time = 5; //600
         }
     }
 }

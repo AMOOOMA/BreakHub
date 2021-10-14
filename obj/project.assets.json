@@ -171,19 +171,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zc470\\.nuget\\packages\\": {}
+    "C:\\Users\\yk930\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj",
+      "projectUniqueName": "C:\\Users\\yk930\\Documents\\GitHub\\BreakHub\\BreakHub.csproj",
       "projectName": "BreakHub",
-      "projectPath": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\BreakHub.csproj",
-      "packagesPath": "C:\\Users\\zc470\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Umass\\2021 Fall\\Hackathon\\BreakHub\\obj\\",
+      "projectPath": "C:\\Users\\yk930\\Documents\\GitHub\\BreakHub\\BreakHub.csproj",
+      "packagesPath": "C:\\Users\\yk930\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yk930\\Documents\\GitHub\\BreakHub\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zc470\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yk930\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -236,7 +241,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   },

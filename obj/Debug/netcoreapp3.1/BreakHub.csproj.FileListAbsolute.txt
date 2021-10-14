@@ -46,3 +46,31 @@ D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\runtimes\uni
 D:\Study\Umass\2021 Fall\Hackathon\BreakHub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.Properties.Resources.resources
 D:\Study\Umass\2021 Fall\Hackathon\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.GenerateResource.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.exe
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.deps.json
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.runtimeconfig.json
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.runtimeconfig.dev.json
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\BreakHub.pdb
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\Tulpep.NotificationWindow.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.AssemblyReference.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub_MarkupCompile.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub_MarkupCompile.lref
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.g.resources
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.Properties.Resources.resources
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.GenerateResource.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.AssemblyInfoInputs.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.AssemblyInfo.cs
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.csproj.CoreCompileInputs.cache
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.dll
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.pdb
+C:\Users\yk930\Documents\GitHub\BreakHub\obj\Debug\netcoreapp3.1\BreakHub.genruntimeconfig.cache
