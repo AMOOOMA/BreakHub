@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -54,6 +55,7 @@ namespace BreakHub
         }
         private void popup(System.Drawing.Image image, string label, string message)
         {
+            SystemSounds.Exclamation.Play();
             PopupNotifier popup = new PopupNotifier();
             popup.Image = image;            //SystemIcons.Information.ToBitmap();
             popup.TitleText = label;        //"Counting down for study";
