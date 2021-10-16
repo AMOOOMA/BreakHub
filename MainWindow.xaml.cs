@@ -114,6 +114,10 @@ namespace BreakHub
             
         }
 
+        private bool isWorking() {
+            
+        }
+
         private void Startup_CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
