@@ -16,6 +16,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Tulpep.NotificationWindow;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace BreakHub
 {
@@ -29,14 +31,107 @@ namespace BreakHub
         private int time = 0;
         private bool flag = true; //true for study; false for break
         private DispatcherTimer Timer = new DispatcherTimer();
-        private int study_time = 0, break_time = 10;
+        private int study_time = 0, break_time = 50;
+
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetForegroundWindow();
+        [DllImport("user32.dll")]
+        private static extern int GetWindowText(IntPtr hwnd, StringBuilder ss, int count);
+
+
+        
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private string ActiveWindowTitle()
+        {
+            const int nChar = 256;
+            StringBuilder build = new StringBuilder(nChar);
+            IntPtr handle = IntPtr.Zero;
+            handle = GetForegroundWindow();
+            if (GetWindowText(handle, build, nChar) > 0)
+            {
+                return build.ToString();
+            }
+            else
+            {
+                return "";
+            }
+
+        }
+
+        //helper method to see if any key was pressed
+        private static bool anyKeyDown()
+        {
+            var values = Enum.GetValues(typeof(Key));
+
+            foreach (var k in values)
+                if (((Key)k) != Key.None && Keyboard.IsKeyDown((Key)k))
+                    return true;
+
+            return false;
+        }
+
+        
+        //check if the user is working, if the mouse is used or any key is pressed at every half a second, then the timer will be starting or stopping
+        private void isWorking()
+        {
+            System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
+            while (true)
+            {
+                int count = 0;
+                var mouseLeftState = Mouse.LeftButton;
+                var mouseRightState = Mouse.RightButton;
+                var mouseCenterState = Mouse.MiddleButton;
+                watch.Start();
+                while (watch.ElapsedMilliseconds < 5000)
+                {
+                    string windowName = ActiveWindowTitle();
+                    if (mouseLeftState == MouseButtonState.Pressed || mouseCenterState == MouseButtonState.Pressed || mouseRightState == MouseButtonState.Pressed
+                        || anyKeyDown() || windowName.Contains("Youtube") || windowName.Contains("Netflix"))
+                    {
+                        count++;
+                    }
+                }
+                watch.Stop();
+                watch.Reset();
+                if (count > 0)
+                {
+                    flag = true;
+                } 
+                else
+                {
+                    flag = false;
+                }
+
+                if (flag)
+                {
+                    Timer.Start();
+                    System.Threading.Thread.Sleep(20000);
+                    Timer.Stop();
+                } 
+                else
+                {
+                    Timer.Stop();
+                    System.Threading.Thread.Sleep(10000);
+                }
+            }
+        }
+
+        
+
+
         private void beg_timer_click(object sender, RoutedEventArgs e)
         {
+            Console.Write("hi");
+            System.Threading.Thread trackFlagThread = new System.Threading.Thread(isWorking);
+            trackFlagThread.SetApartmentState(System.Threading.ApartmentState.STA);
+            trackFlagThread.IsBackground = true;
+            trackFlagThread.Start();
+            Console.Write("Hello");
             input = Timer_Input.Text;
             time = string_time(input);
             study_time = time;
@@ -119,6 +214,7 @@ namespace BreakHub
 
         }
 
+
         private void reset_timer(int input_time) {
             Timer.Stop();
             Timer_Input.Text = new_timer;
@@ -129,5 +225,7 @@ namespace BreakHub
             Timer.Start();
             flag = !flag;
         }
+
+        
     }
 }
