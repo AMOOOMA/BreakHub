@@ -32,6 +32,7 @@ namespace BreakHub
         private bool flag = true; //true for study; false for break
         private DispatcherTimer Timer = new DispatcherTimer();
         private int study_time = 0, break_time = 50;
+        private bool killThread = false;
 
         [DllImport("user32.dll")]
         private static extern IntPtr GetForegroundWindow();
@@ -82,16 +83,26 @@ namespace BreakHub
             System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
             while (true)
             {
+                if (killThread) break;
                 int count = 0;
                 var mouseLeftState = Mouse.LeftButton;
                 var mouseRightState = Mouse.RightButton;
                 var mouseCenterState = Mouse.MiddleButton;
                 watch.Start();
+                System.Windows.Point pos;
+                Dispatcher.Invoke(() => {
+                    pos = Mouse.GetPosition(this);
+                });
+
                 while (watch.ElapsedMilliseconds < 5000)
                 {
                     string windowName = ActiveWindowTitle();
+                    System.Windows.Point currPos;
+                    Dispatcher.Invoke(() => {
+                        currPos = Mouse.GetPosition(this);
+                    });
                     if (mouseLeftState == MouseButtonState.Pressed || mouseCenterState == MouseButtonState.Pressed || mouseRightState == MouseButtonState.Pressed
-                        || anyKeyDown() || windowName.Contains("Youtube") || windowName.Contains("Netflix"))
+                        || anyKeyDown() || windowName.Contains("Youtube") || windowName.Contains("Netflix") || Math.Abs(pos.X - currPos.X) + Math.Abs(pos.Y - currPos.Y) > 20)
                     {
                         count++;
                     }
@@ -127,6 +138,7 @@ namespace BreakHub
         private void beg_timer_click(object sender, RoutedEventArgs e)
         {
             Console.Write("hi");
+            killThread = false;
             System.Threading.Thread trackFlagThread = new System.Threading.Thread(isWorking);
             trackFlagThread.SetApartmentState(System.Threading.ApartmentState.STA);
             trackFlagThread.IsBackground = true;
@@ -143,6 +155,8 @@ namespace BreakHub
         }
         private void stp_timer_click(object sender, RoutedEventArgs e)
         {
+            killThread = true;
+            System.Threading.Thread.Sleep(100);
             popup(SystemIcons.Warning.ToBitmap(), "Timer Interrupted", "\n\nThe timer is stopped because user clicks stop timer button!");
             Timer_Input.Text = new_timer;
             Timer.Stop();
